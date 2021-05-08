@@ -1,0 +1,22 @@
+int main()
+{
+	int key,n;
+	srand(time(0));
+	key = rand()%100+1;
+	printf("系统已产生一个介于1-100的随机数，请你猜猜看是多少？\n");
+	while(1)
+	{
+		   printf("请输入你猜的数：");
+		  scanf("%d",&n);
+		if(n>key)
+		  printf("大了\n");
+		else if(n<key)
+		   printf("小了\n");
+		else
+		{
+		  printf("恭喜你猜对了!\n");
+		  break;
+		}
+	}
+   return 0;
+}
