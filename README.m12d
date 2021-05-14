@@ -1,0 +1,28 @@
+# 18
+18
+
+int main()
+{
+	int ret = 0;
+	int ch = 0;
+	char password[20] = {0};
+	printf("请输入密码：");
+	scanf("%s",password);//输入密码，并存放在password数组中
+	//输入缓冲区中还有一个‘\n’
+	//读取一下\n
+	while((ch=getchar()) !='\n')//一直循环，直到读取到\n才跳出循环
+	{
+	;//不要它做事情，就空操作
+	}
+	printf("请输入（Y/N）确定：");
+	ret = getchar();//Y\N
+	if(ret == 'Y')
+	{
+		printf("确认成功\n");
+	}
+	else
+	{
+		printf("放弃确认\n");
+	}
+  return 0;
+}
